@@ -1,4 +1,8 @@
 # JetsonGPIO(C++)
+pjueon様のフォーク品です。   
+JetsonNanoにて32番ピンのPWMが出せない、([プルリク参照](https://github.com/pjueon/JetsonGPIO/pull/7/commits/4fb23e3fcb7646353aea8563b8128b9c64939bb8))   
+simple_pwm.cppがデフォルトだとビルドが通らないなどの問題を解決しました。
+
 A C++ library that enables the use of Jetson's GPIOs  
 (Jetson TX1, TX2, AGX Xavier, and Nano)
     
@@ -16,7 +20,7 @@ The library provides almost same APIs as the the NVIDIA's Jetson GPIO Python lib
 # Installation
 Clone this repository, build it, and install it.
 ```
-git clone https://github.com/pjueon/JetsonGPIO
+git clone https://github.com/yukimakura/JetsonGPIO
 cd JetsonGPIO/build
 make all
 sudo make install
